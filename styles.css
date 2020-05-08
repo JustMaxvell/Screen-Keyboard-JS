@@ -40,56 +40,21 @@ body,
   border-color: skyblue;
 }
 
-.Backspace {
-  grid-column: 14 / 16;
+.Backspace,
+.Enter,
+.CapsLock,
+.ShiftLeft,
+.Tab,
+.Leng {
+  grid-column: span 2;
 }
 
 .Space {
-  grid-column: 4 / 12;
-}
-
-.Enter {
-  grid-column: 15 / 17;
-}
-
-.CapsLock {
-  grid-column: 1 / 3;
-}
-
-.AltLeft {
-  grid-column: 3 / 4;
-}
-
-.ControlLeft {
-  grid-column: 1 / 2;
-}
-
-.ControlRight {
-  grid-column: 12 / 13;
-}
-
-.ShiftLeft {
-  grid-column: 1 / 3;
+  grid-column: span 8;
 }
 
 .ShiftRight {
-  grid-column: 14 / 17;
-}
-
-.MetaLeft {
-  grid-column: 2 / 3;
-}
-
-.Tab {
-  grid-column: 1 / 3;
-}
-
-.Delete {
-  grid-column: 15 / 17;
-}
-
-.Leng {
-  grid-column: 15 / 17;
+  grid-column: span 3;
 }
 
 textarea {
