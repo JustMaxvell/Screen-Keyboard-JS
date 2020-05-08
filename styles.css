@@ -18,7 +18,7 @@ body,
   width: 1000px;
   height: 300px;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(calc(16 * 4), 1fr);
   grid-gap: 5px;
   padding: 20px;
   border-radius: 10px;
@@ -29,6 +29,8 @@ body,
 }
 
 .key {
+  grid-column: span 4;
+  grid-row: span 2;
   border: 3px solid transparent;
   padding: 5px;
   border-radius: 5px;
@@ -40,21 +42,42 @@ body,
   border-color: skyblue;
 }
 
-.Backspace,
-.Enter,
-.CapsLock,
-.ShiftLeft,
-.Tab,
-.Leng {
-  grid-column: span 2;
+.Backquote {
+  grid-column: span 3;
 }
 
-.Space {
-  grid-column: span 8;
+.Backspace,
+.Enter,
+.ShiftLeft {
+  grid-column: span 9;
+}
+
+.Tab {
+  grid-column: span 6;
+}
+
+.Leng {
+  grid-column: span 10;
+}
+
+.CapsLock{
+  grid-column: span 7;
 }
 
 .ShiftRight {
-  grid-column: span 3;
+  grid-column: span 11;
+}
+
+.Space {
+  grid-column: span 36;
+}
+
+.ArrowUp,
+.ArrowDown {
+  grid-row: span 1;
+  padding: 0;
+  height: 20px;
+  margin-bottom: -5px;
 }
 
 textarea {
